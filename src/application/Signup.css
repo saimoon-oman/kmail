@@ -1,0 +1,16 @@
+.bgimage {
+	-fx-background-image: url("Signup_background.jpg");
+	-fx-background-repeat: no-repeat;
+  	-fx-background-size: cover;
+        -fx-opacity: 0.3;
+}
+
+.button {
+    -fx-background-color: #d6a0f2;
+    -fx-background-radius: 50px;
+}
+
+.button:hover {
+	-fx-background-color: #7833c2;
+	-fx-text-fill: white;
+}

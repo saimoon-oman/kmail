@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="636.0" prefWidth="800.0" stylesheets="@Compose.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Composescenecontroller">
+   <children>
+      <Label fx:id="labelEmailFrom" layoutX="105.0" layoutY="111.0" text="emailFrom">
+         <font>
+            <Font name="Bookman Old Style Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="111.0" prefHeight="23.0" prefWidth="65.0" text="From  :">
+         <font>
+            <Font name="Comic Sans MS Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="154.0" prefHeight="23.0" prefWidth="65.0" text="To     :">
+         <font>
+            <Font name="Comic Sans MS Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="199.0" text="Subject:">
+         <font>
+            <Font name="Comic Sans MS Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldSubject" layoutX="105.0" layoutY="198.0" prefHeight="25.0" prefWidth="458.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="237.0" />
+      <Button layoutX="700.0" layoutY="549.0" mnemonicParsing="false" onAction="#buttonSendM" prefHeight="37.0" prefWidth="80.0" text="Send" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font name="Century Schoolbook Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="textAreaContent" layoutX="20.0" layoutY="269.0" prefHeight="260.0" prefWidth="547.0" AnchorPane.bottomAnchor="107.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="233.0" AnchorPane.topAnchor="269.0" />
+      <ComboBox fx:id="comboBoxEmailTo" layoutX="105.0" layoutY="153.0" prefHeight="25.0" prefWidth="458.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="237.0" />
+      <Button layoutX="571.0" layoutY="585.0" mnemonicParsing="false" onAction="#buttonSendToManyM" prefHeight="37.0" prefWidth="115.0" text="Send to many">
+         <font>
+            <Font name="Century Schoolbook Bold" size="13.0" />
+         </font></Button>
+      <Button layoutX="699.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonLogOutM" prefHeight="38.0" prefWidth="82.0" text="Log Out">
+         <font>
+            <Font name="Century Schoolbook Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="24.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonBackM" prefHeight="38.0" prefWidth="73.0" text="Back">
+         <font>
+            <Font name="Century Schoolbook Bold" size="13.0" />
+         </font>
+      </Button>
+      <Pane layoutX="580.0" layoutY="269.0" prefHeight="226.0" prefWidth="201.0" styleClass="picicon">
+         <children>
+            <ImageView fx:id="imageViewImage" fitHeight="226.0" fitWidth="201.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@picicon.png" />
+               </image></ImageView>
+         </children>
+      </Pane>
+      <Button layoutX="719.0" layoutY="507.0" mnemonicParsing="false" onAction="#buttonUploadImageM" text="Upload">
+         <font>
+            <Font name="Century Schoolbook Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="580.0" layoutY="507.0" mnemonicParsing="false" onAction="#buttonRemoveImageM" text="Remove">
+         <font>
+            <Font name="Century Schoolbook Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="20.0" layoutY="237.0" text="Content">
+         <font>
+            <Font name="Comic Sans MS Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="595.0" text="K-MAIL" textFill="#a471fc">
+         <font>
+            <Font name="Courier New Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="55.0" fitWidth="76.0" layoutX="23.0" layoutY="540.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="589.0" layoutY="237.0" text="Image">
+         <font>
+            <Font name="Comic Sans MS Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="52.0" text="Compose" textFill="#a471fc">
+         <font>
+            <Font name="Courier New Bold Italic" size="33.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
